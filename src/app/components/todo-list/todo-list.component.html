@@ -1,0 +1,12 @@
+<p>todo-list works!</p>
+
+
+  <ul>
+    <li (click)="selectTodo(todo)" *ngFor="let todo of todos$ | async | selectedTodo: 0">
+      {{todo | json}}
+    </li>
+  </ul>
+
+
+
+

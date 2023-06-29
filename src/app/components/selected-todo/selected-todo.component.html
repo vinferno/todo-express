@@ -1,0 +1,6 @@
+<p>selected-todo works!</p>
+{{todo$ | async | json}}
+<ul>
+  <li *ngFor="let todo of (todos$ | async) | selectedTodo: id">{{todo| json}}</li>
+</ul>
+id: {{id | json}}
